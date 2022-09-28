@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,152 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Admin dashboard</title>
 </head>
+
 <body>
   <div class="container">
-    <div class="sidebar"></div>
-    <div class="header"></div>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img class="dashboard-icon" src="./images/view-dashboard.png" alt="">
+        <div class="dashboard-header">
+          <h2>Dashboard</h2>
+        </div>
+      </div>
+      <div class="sidebar-main-tabs">
+
+        <a href="#" class="icon"><img src="./images/home.png" alt="home icon"></a>
+        <a href="#" class="sidebar-tab">Home</a>
+        <a href="#" class="icon"><img src="./images/account.png" alt="profile icon"></a>
+        <a href="#" class="sidebar-tab">Profile</a>
+        <a href="https://github.com/lkatchutas-99" class="icon"><img src="./images/github.png" alt="github icon"></a>
+        <a href="https://github.com/lkatchutas-99" class="sidebar-tab">My GitHub</a>
+        <a href="#" class="icon"><img src="./images/email.png" alt="messages icon"></a>
+        <a href="#" class="sidebar-tab">Messages</a>
+        <a href="#" class="icon"><img src="./images/calendar-check-outline.png" alt="task icon"></a>
+        <a href="#" class="sidebar-tab">Tasks</a>
+        <a href="#" class="icon"><img src="./images/account-group.png" alt="group icon"></a>
+        <a href="#" class="sidebar-tab">Groups</a>
+      </div>
+      <div class="sidebar-extra-tabs">
+        <a href="#" class="icon"><img src="./images/cog.png" alt="settings icon"></a>
+        <a href="#" class="sidebar-tab">Settings</a>
+        <a href="#" class="icon"><img src="./images/help-box.png" alt="support icon"></a>
+        <a href="#" class="sidebar-tab">Support</a>
+        <a href="#" class="icon"><img src="./images/shield-check.png" alt="privacy icon"></a>
+        <a href="#" class="sidebar-tab">Privacy</a>
+      </div>
+    </div>
+    <div class="header">
+      <form class="search-form" action="" method="post">
+        <button class="search-button" type="submit"><img src="./images/magnify.png" alt=""></button>
+        <input class="search-input" type="search" name="search" id="">
+      </form>
+      <div class="profile">
+        <img class="notifications" src="./images/bell-outline.png" alt="bell icon">
+        <img class="profile-picture" src="https://avatars.githubusercontent.com/u/96667853?s=400&v=4"
+          alt="profile picture">
+        <h4>Luka Katchutas</h4>
+      </div>
+      <div class="greetings">
+        <img class="profile-picture greeting-pfp" src="https://avatars.githubusercontent.com/u/96667853?s=400&v=4"
+          alt="">
+        <h5>Hi there,</h5>
+        <h3>Luka Katchutas (@lkatchutas-99)</h3>
+      </div>
+      <div class="header-buttons"></div>
+    </div>
     <div class="main-content">
       <div class="projects">
-        <h3>Your projects</h3>
+        <span class="projects-header main-container-headers">Your Projects</span>
+        <div class="project-container">
+          <div class="project-container-text">
+            <h4>Community Project Donation</h4>
+            <p>
+              This project is designed to allow users to donate to construction projects in order for them to speed up
+            </p>
+          </div>
+          <div class="project-container-buttons">
+
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-container-text">
+
+            <h4>Calculator</h4>
+            <p>
+              This project is a full functioning calculator. Coded using functionality and displayed using HTML/CSS.
+            </p>
+          </div>
+          <div class="project-container-buttons">
+
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-container-text">
+            <h4>Tic Tac Toe</h4>
+            <p>
+              Based on the classic tic-tac-toe game, this text-based game allows
+              you to play tic-tac-toe with your friends or with a computer. Built using Ruby.
+            </p>
+          </div>
+          <div class="project-container-buttons">
+
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-container-text">
+
+            <h4>Hang-man</h4>
+            <p>
+              This project is a text-based hang-man game. Play against your friends or play against a computer.
+              Ability to save and load your progress. The language used is Ruby
+            </p>
+          </div>
+          <div class="project-container-buttons">
+
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-container-text">
+
+            <h4>Mastermind</h4>
+            <p>
+              This is a text version of the classic mastermind game. Play against the computer, against your friends, or
+              watch the computer verse another computer.
+            </p>
+          </div>
+          <div class="project-container-buttons">
+
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-container-text">
+            <h4>Random Code</h4>
+            <p>
+              Random Code is a website designed to teach people how to code using various languages.
+            </p>
+          </div>
+          <div class="project-container-buttons">
+            
+          </div>
+        </div>
       </div>
-      <div class="announcements"></div>
-      <div class="trending"></div>
+      <div class="additional-content">
+        <span class="main-container-headers">
+          Announcements
+        </span>
+        <div class="announcements additional-content-container">
+          <div class="first-announcement"></div>
+          <div class="second-announcement"></div>
+          <div class="third-announcement"></div>
+        </div>
+        <span class="main-container-headers">
+          Trending
+        </span>
+        <div class="trending additional-content-container"></div>
+      </div>
     </div>
   </div>
+  <script src="./javascript/script.js"></script>
 </body>
+
 </html>
